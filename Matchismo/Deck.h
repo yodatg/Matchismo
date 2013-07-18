@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Card;
 
 @interface Deck : NSObject
+
+- (void)addCard:(Card *)card atTop:(BOOL)atTop;
+- (Card *)drawRandomCard;
 
 @end
