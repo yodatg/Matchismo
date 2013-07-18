@@ -1,14 +1,14 @@
 //
-//  AppDelegate.m
+//  CardGameAppDelegate.m
 //  Matchismo
 //
-//  Created by Thomas Grant on 18/07/2013.
+//  Created by Thomas Grant on 08/07/2013.
 //  Copyright (c) 2013 Thomas Grant. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "CardGameAppDelegate.h"
 
-@implementation AppDelegate
+@implementation CardGameAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
