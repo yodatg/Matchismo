@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class PlayingCardDeck;
 
 @interface CardGameViewController : UIViewController
+
+
 
 @end
