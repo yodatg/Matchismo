@@ -15,6 +15,8 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *matchedLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 @property (nonatomic) int flipCount;
 @property (nonatomic, strong) CardMatchingGame *game;
 @end
@@ -26,6 +28,7 @@
     if (!_game) {
         _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
                                                   usingDeck:[[PlayingCardDeck alloc] init]];
+        _game.numberOfCardToMatch = self.segmentedControl.selectedSegmentIndex + 2;
     }
     
     return _game;
@@ -52,11 +55,19 @@
         
     }
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+    self.matchedLabel.text = self.game.descriptionOfMatch;
 }
 - (IBAction)flipCard:(UIButton *)sender
 {
     [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
     self.flipCount++;
+    [self updateUI];
+    
+}
+
+- (IBAction)deal:(id)sender {
+    self.game = nil;
+    self.flipCount = 0;
     [self updateUI];
     
 }
@@ -67,6 +78,23 @@
     self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d", self.flipCount];
     
 }
+
+- (IBAction)cardModeChanged:(UISegmentedControl *)sender {
+    
+    switch ([sender selectedSegmentIndex]) {
+        case 0:
+            self.game.numberOfCardToMatch = 2;
+            break;
+        case 1:
+            self.game.numberOfCardToMatch = 3;
+            break;
+        default:
+            self.game.numberOfCardToMatch = 2;
+            break;
+    }
+    
+}
+
 
 
 
