@@ -23,6 +23,7 @@
 		E271C007179876EA005482DD /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = E271BFFF179876EA005482DD /* PlayingCardDeck.m */; };
 		E271C008179876EA005482DD /* CardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E271C001179876EA005482DD /* CardGameViewController.m */; };
 		E271C00C1798943A005482DD /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = E271C00B1798943A005482DD /* CardMatchingGame.m */; };
+		E2D529D417B128410077889D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D529D317B128410077889D /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		E271C001179876EA005482DD /* CardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardGameViewController.m; sourceTree = "<group>"; };
 		E271C00A1798943A005482DD /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
 		E271C00B1798943A005482DD /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
+		E2D529D317B128410077889D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				E271C00917987709005482DD /* Model */,
 				E271C000179876EA005482DD /* CardGameViewController.h */,
 				E271C001179876EA005482DD /* CardGameViewController.m */,
+				E2D529D317B128410077889D /* Images.xcassets */,
 				E271BFD9179876D4005482DD /* Supporting Files */,
 			);
 			path = Matchismo;
@@ -199,6 +202,7 @@
 				E271BFDD179876D4005482DD /* InfoPlist.strings in Resources */,
 				E271BFE5179876D4005482DD /* Default.png in Resources */,
 				E271BFE7179876D4005482DD /* Default@2x.png in Resources */,
+				E2D529D417B128410077889D /* Images.xcassets in Resources */,
 				E271BFE9179876D4005482DD /* Default-568h@2x.png in Resources */,
 				E271C003179876EA005482DD /* MainStoryboard.storyboard in Resources */,
 			);
@@ -295,6 +299,8 @@
 		E271BFF3179876D4005482DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -309,6 +315,8 @@
 		E271BFF4179876D4005482DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
