@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E24AB85517A7C0D800883999 /* cardback.png in Resources */ = {isa = PBXBuildFile; fileRef = E24AB85417A7C0D800883999 /* cardback.png */; };
 		E271BFD3179876D4005482DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E271BFD2179876D4005482DD /* UIKit.framework */; };
 		E271BFD5179876D4005482DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E271BFD4179876D4005482DD /* Foundation.framework */; };
 		E271BFD7179876D4005482DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E271BFD6179876D4005482DD /* CoreGraphics.framework */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E24AB85417A7C0D800883999 /* cardback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardback.png; sourceTree = "<group>"; };
 		E271BFCF179876D4005482DD /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E271BFD2179876D4005482DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E271BFD4179876D4005482DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -112,6 +114,7 @@
 		E271BFD9179876D4005482DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E24AB85417A7C0D800883999 /* cardback.png */,
 				E271BFDA179876D4005482DD /* Matchismo-Info.plist */,
 				E271BFDB179876D4005482DD /* InfoPlist.strings */,
 				E271BFDE179876D4005482DD /* main.m */,
@@ -196,6 +199,7 @@
 				E271BFE7179876D4005482DD /* Default@2x.png in Resources */,
 				E271BFE9179876D4005482DD /* Default-568h@2x.png in Resources */,
 				E271C003179876EA005482DD /* MainStoryboard.storyboard in Resources */,
+				E24AB85517A7C0D800883999 /* cardback.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +332,7 @@
 				E271BFF4179876D4005482DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

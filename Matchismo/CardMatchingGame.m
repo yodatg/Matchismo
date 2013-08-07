@@ -14,6 +14,7 @@
 @property (readwrite, nonatomic) int score;
 @property (strong, nonatomic) NSMutableArray *cards; // of Card
 @property (readwrite, nonatomic) NSString *descriptionOfMatch;
+@property (readwrite, nonatomic) NSMutableArray *pastMatches;
 @end
 
 @implementation CardMatchingGame
@@ -28,6 +29,13 @@
 - (Card *)cardAtIndex:(NSUInteger)index
 {
     return (index < [self.cards count]) ? self.cards[index] : nil;
+}
+
+- (NSMutableArray *)pastMatches
+{
+    if (!_pastMatches)
+        _pastMatches = [[NSMutableArray alloc] init];
+    return _pastMatches;
 }
 
 - (void)setNumberOfCardToMatch:(int)numberOfCardToMatch {
@@ -88,6 +96,12 @@
                      card.contents,
                      [otherContents componentsJoinedByString:@" & "],
                      matchScore * MATCH_BONUS];
+                    
+                    if (self.pastMatches.count > 5) {
+                        [self.pastMatches removeObjectAtIndex:6];
+                    }
+                    [self.pastMatches insertObject:self.descriptionOfMatch atIndex:0];
+                    
                 } else {
                     for (Card *otherCard in otherCards) {
                         otherCard.faceUp = NO;

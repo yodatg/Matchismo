@@ -14,6 +14,7 @@
 @property (readonly, nonatomic) int score;
 @property (readonly, nonatomic) NSString *descriptionOfMatch;
 @property (nonatomic) int numberOfCardToMatch;
+@property (readonly, nonatomic) NSMutableArray *pastMatches;
 
 // designated initializer
 - (id)initWithCardCount:(NSUInteger)count
